@@ -1,0 +1,31 @@
+/* Normal Links */
+a {
+   font-family: "Nunito";
+   line-height: 2rem;
+   box-shadow: inset 0 -.1rem #fecdd3;
+   transition: .1s;
+}
+
+a:hover {
+   box-shadow: inset 0 -.3rem #fecdd3;
+}
+
+/* Navigation Fracture Links */
+.fracture-link { transition: .2s; }
+.fracture-link:hover {
+   /* color: #edd83a; too playful */
+   text-shadow: .5rem .5rem #e11d48,
+                -.5rem -.5rem #0284c7;
+   /* color: #9C0B1E;
+   text-shadow: .1rem .1rem #fff,
+                -.1rem -.1rem #fff; */
+   /* text-shadow: .5rem .5rem #bbbbbb80,
+                -.5rem -.5rem #aaaaaa80; */
+}
+
+/* Navigation Flip Links */
+.rotate-link:hover {
+   pointer-events: fill;
+   transform: rotateX(360deg);
+   transition: .4s;
+}

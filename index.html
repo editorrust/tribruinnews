@@ -3,10 +3,38 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+   <link rel="icon" type="image/x-icon" href="Assets/favicon.png">
    <title>Tribruin News</title>
-   <link rel="stylesheet" href="Styles/style.css">
+   <link rel="stylesheet" href="Styles/tailwind.css">
+   <link rel="stylesheet" href="Styles/homepage.css">
 </head>
-<body>
-   <h2 class="bg-rose-400">First commit</h2>
+<body style="padding: 6.5rem 0 0 0">
+   <div class="navigation-parent" include-html="Partials/navigation-mobile.html"></div>
+   <div class="p-4 m-6 bg-gray-100 rounded-lg sm:bg-white md:grid md:grid-cols-auto-2">
+      <div>
+         <p>Get yourself some real news: <a class="text-rose-600" href="https://hillside-township.github.io/" target="_blank">at Hillside Township!</a></p>
+         <p>This website was made by the excellent & extraordinarily modest developer <a class="text-rose-600" href="https://github.com/Squirrel-314" target="_blank">Editor Squirrel</a></p>
+      </div>
+      <div>
+         <p>here</p>
+      </div>
+   </div>
 </body>
 </html>
+<script>
+function toggleNavigation() {
+   if (document.querySelector('.navigation').style.height != '100vh') {
+      document.querySelector('.navigation').style.height = '100vh';
+      document.querySelector('.nav-img').style.bottom = '0';
+      document.querySelector('.navigationStuff').style.display = 'block';
+   }
+   else {
+      document.querySelector('.navigation').style.height = '6.45vh';
+      document.querySelector('.nav-img').style.bottom = '88vh';
+      document.querySelector('.navigationStuff').style.display = 'none';
+   }
+}
+</script>
+<script src="Scripts/include.js"></script>
+<script src="Scripts/navigation.js"></script>
